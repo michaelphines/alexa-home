@@ -23,6 +23,8 @@ gem 'json'
 gem 'chronic'
 gem 'titleize'
 
+gem 'evernote_oauth'
+
 gem 'watir-webdriver'
 gem 'daemons'
 
