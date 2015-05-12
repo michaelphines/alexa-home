@@ -23,10 +23,15 @@ gem 'json'
 gem 'chronic'
 gem 'titleize'
 
-group :development do
-  gem 'sqlite3'
-end
+gem 'watir-webdriver'
+gem 'daemons'
 
-group :production do
-  gem 'pg'
-end
+gem 'foreman'
+
+# group :development do
+#   gem 'sqlite3'
+# end
+
+# group :production do
+#   gem 'pg'
+# end
