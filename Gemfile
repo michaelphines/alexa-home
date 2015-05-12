@@ -27,6 +27,7 @@ gem 'watir-webdriver'
 gem 'daemons'
 
 gem 'foreman'
+gem 'phantomjs'
 
 # group :development do
 #   gem 'sqlite3'

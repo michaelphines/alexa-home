@@ -97,6 +97,7 @@ GEM
       httparty (~> 0.8.3)
     numbers_in_words (0.2.0)
       activesupport
+    phantomjs (1.9.8.0)
     pry (0.10.1)
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
@@ -151,6 +152,7 @@ DEPENDENCIES
   json
   nest_thermostat
   numbers_in_words
+  phantomjs
   pry
   rake
   sinatra

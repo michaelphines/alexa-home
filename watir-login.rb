@@ -10,7 +10,7 @@ class AlexaCrawler
   REFRESH_TIME_IN_MINUTES = 32
 
   def initialize
-    self.browser = Watir::Browser.new
+    self.browser = Watir::Browser.new(:phantomjs)
     self.last_command = ""
     super
   end
@@ -18,12 +18,12 @@ class AlexaCrawler
   def kill
     browser.close
   end
-  
+
   def keep_alive
 
     if browser.url == SETTINGS_URL
       old_browser = self.browser
-      self.browser = Watir::Browser.new 
+      self.browser = Watir::Browser.new
     end
 
     browser.goto LOGIN_URL
@@ -64,7 +64,7 @@ end
 
 def start_crawler(last_command = "")
 	begin
-		a = AlexaCrawler.new	
+		a = AlexaCrawler.new
     a.last_command = last_command
 		a.keep_alive
 	rescue => error
