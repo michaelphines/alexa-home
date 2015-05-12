@@ -18,14 +18,14 @@ class GoogleToPhone
 
 	def authorize(command)
 		if File.file?(SAVED_SESSION)
-			my_cookies = YAML::load(File.open(SAVED_SESSION, 'r')) 
+			my_cookies = YAML::load(File.open(SAVED_SESSION, 'r'))
 			self.browser.cookies.clear
 				my_cookies.each do |saved_cookie|
 					self.browser.cookies.add(saved_cookie[:name], saved_cookie[:value], :expires => saved_cookie[:expires], :path => saved_cookie[:path], :secure => saved_cookie[:secure])
 				end
 		browser.refresh
 		browser.goto(SEARCH_URL)
-		else 
+		else
 			pin = command.split(' ').collect { |n| PIN_NUMBERS[n] if PIN_NUMBERS.keys.include?(n) }
 			self.browser.goto("http://accounts.google.com")
 			self.browser.text_field(:name => 'Email').set ENV[GOOGLE_EMAIL]
@@ -90,7 +90,7 @@ class GoogleToPhone
 				self.browser ||= Watir::Browser.new
 				self.browser.wait(3)
 				self.browser.goto(SEARCH_URL)
-					if !self.browser.div(:text => ENV[GOOGLE_EMAIL).exist?
+					if !self.browser.div(:text => ENV[GOOGLE_EMAIL]).exist?
 						authorize(command)
 					end
 			rescue => error
