@@ -1,6 +1,6 @@
 require 'google/api_client'
 require 'google/api_client/auth/installed_app'
-require 'JSON'
+require 'json'
 require 'chronic'
 require 'titleize'
 
