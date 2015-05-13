@@ -26,6 +26,7 @@ gem 'titleize'
 gem 'evernote_oauth'
 
 gem 'watir-webdriver'
+# gem 'webdriver-user-agent'
 gem 'daemons'
 
 gem 'foreman'

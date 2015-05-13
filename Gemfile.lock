@@ -47,6 +47,10 @@ GEM
     color (1.7.1)
     curb (0.8.8)
     daemons (1.2.2)
+    evernote-thrift (1.25.1)
+    evernote_oauth (0.2.3)
+      evernote-thrift
+      oauth (>= 0.4.1)
     extlib (0.9.16)
     faraday (0.9.1)
       multipart-post (>= 1.2, < 3)
@@ -97,6 +101,7 @@ GEM
       httparty (~> 0.8.3)
     numbers_in_words (0.2.0)
       activesupport
+    oauth (0.4.7)
     phantomjs (1.9.8.0)
     pry (0.10.1)
       coderay (~> 1.1.0)
@@ -145,6 +150,7 @@ DEPENDENCIES
   chronic
   color
   daemons
+  evernote_oauth
   foreman
   geocoder
   google-api-client
