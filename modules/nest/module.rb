@@ -9,9 +9,7 @@ class AlexaNest
   end
 
   def process_command(command)
-    words = command.split(" ")
-    index = words.index("to")
-    temp = (words[index + 1] + " " + words[index + 2]).in_numbers if !index.nil?
+    temp = command.gsub(/.*\sto\s/, "").in_numbers
 
     NEST_CLIENT.temp = temp
     NEST_CLIENT.temp_low = temp

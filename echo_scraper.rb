@@ -34,7 +34,7 @@ class EchoScraper
         fork { callback.call(item.element(css: ".text").text) }
         item.element(css: ".mark-done").click
       end
-      sleep(0.1)
+      sleep(1)
     end
   end
 
