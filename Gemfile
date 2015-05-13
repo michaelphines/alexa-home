@@ -1,18 +1,13 @@
 ruby '2.2.2'
 source 'https://rubygems.org'
 
-gem 'sinatra'
-
 gem 'hue', github: "zachfeldman/hue"
 gem 'color'
-
 
 gem 'pry'
 
 gem 'numbers_in_words'
 
-gem 'activerecord'
-gem 'sinatra-activerecord'
 gem 'rake'
 
 gem 'geocoder'
