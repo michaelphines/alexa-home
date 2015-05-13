@@ -21,6 +21,10 @@ class App
         alexa_module.process_command(command)
       end
     end
+  rescue => e
+    STDERR.puts "Error processing command: \"#{command}\""
+    STDERR.puts e.message
+    STDERR.puts e.backtrace.join("\n")
   end
 end
 

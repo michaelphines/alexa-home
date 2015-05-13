@@ -31,7 +31,7 @@ class EchoScraper
     while true
       item = browser.element(css: ".to-do-item:not(.complete)")
       if item.present?
-        fork { callback.call(item.element(css: ".text").text) }
+        callback.call(item.element(css: ".text").text)
         item.element(css: ".mark-done").click
       end
       sleep(1)
