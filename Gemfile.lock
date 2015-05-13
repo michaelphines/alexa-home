@@ -1,4 +1,11 @@
 GIT
+  remote: git://github.com/ericboehs/nest_thermostat.git
+  revision: f6042a71c04d02846379f1a102d88651bc3c1da7
+  specs:
+    nest_thermostat (0.0.5)
+      httparty (~> 0.8.3)
+
+GIT
   remote: git://github.com/zachfeldman/hue.git
   revision: 3d6ef3912bc9222488dd30f15289f315358e8815
   specs:
@@ -46,7 +53,6 @@ GEM
     coderay (1.1.0)
     color (1.7.1)
     curb (0.8.8)
-    daemons (1.2.2)
     evernote-thrift (1.25.1)
     evernote_oauth (0.2.3)
       evernote-thrift
@@ -97,8 +103,6 @@ GEM
     multi_json (1.11.0)
     multi_xml (0.5.5)
     multipart-post (2.0.0)
-    nest_thermostat (0.0.4)
-      httparty (~> 0.8.3)
     numbers_in_words (0.2.0)
       activesupport
     oauth (0.4.7)
@@ -149,14 +153,13 @@ DEPENDENCIES
   activerecord
   chronic
   color
-  daemons
   evernote_oauth
   foreman
   geocoder
   google-api-client
   hue!
   json
-  nest_thermostat
+  nest_thermostat!
   numbers_in_words
   phantomjs
   pry

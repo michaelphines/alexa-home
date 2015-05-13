@@ -5,7 +5,6 @@ gem 'sinatra'
 gem 'hue', github: "zachfeldman/hue"
 gem 'color'
 
-gem 'nest_thermostat'
 
 gem 'pry'
 
@@ -26,16 +25,7 @@ gem 'titleize'
 gem 'evernote_oauth'
 
 gem 'watir-webdriver'
-# gem 'webdriver-user-agent'
-gem 'daemons'
 
 gem 'foreman'
 gem 'phantomjs'
-
-# group :development do
-#   gem 'sqlite3'
-# end
-
-# group :production do
-#   gem 'pg'
-# end
+gem 'nest_thermostat', github: "ericboehs/nest_thermostat"

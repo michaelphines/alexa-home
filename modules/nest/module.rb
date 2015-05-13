@@ -13,7 +13,9 @@ class AlexaNest
     index = words.index("to")
     temp = (words[index + 1] + " " + words[index + 2]).in_numbers if !index.nil?
 
-    NEST_CLIENT.temperature = temp
+    NEST_CLIENT.temp = temp
+    NEST_CLIENT.temp_low = temp
+    NEST_CLIENT.temp_high = temp
   end
 
 end
