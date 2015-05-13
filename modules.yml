@@ -3,8 +3,8 @@
 
 modules:
   # - hue
+  # - jriver
   - nest
-  - jriver
   - uber
   - google_calendar
   - google_to_phone
